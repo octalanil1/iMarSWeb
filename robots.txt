@@ -1,0 +1,10 @@
+User-agent: *
+
+Allow: /
+Disallow: /operations
+Disallow: /blog/wp-admin/
+
+
+sitemap: https://rta.saginfotech.com/sitemap.xml
+
+

@@ -1,0 +1,68 @@
+.dropdwon ul.submenu{display:none;}
+
+.btn.cancel {
+
+    background: #ca0000 none repeat scroll 0 0;
+
+    border: 1px solid #ca0000;
+
+    font-size: 18px;
+
+    font-weight: 700;
+
+    height: 46px;
+
+    margin-left: -68px;
+
+    margin-top: 20px;
+
+    padding: 10px 25px;
+
+    text-transform: uppercase;
+
+}
+.srcnar{margin-top:0px !important;}
+.userliset ul{ list-style:none; padding:0; margin:0 1%; width:31.33%; float:left; border:solid 1px #ddd;  }
+.userliset ul li{ padding:8px 20px; border-bottom:solid 1px #ddd; margin:0; background:#fff;}
+.userliset ul li input[type="radio"] {
+    float: left;
+    height: auto;
+    margin: 6px 10px 0 0;
+    padding: 0;
+    width: auto;
+}
+.userliset ul li:last-child{ border:none;}
+.userliset ul li:first-child{ background:#00b9bd!important; color:#fff; font-size:18px;}
+.userliset { padding-bottom:30px; margin-top:25px; border:solid 1px #ddd;}
+
+
+.redio [type="radio"] { border: 0;  clip: rect(0 0 0 0);  height: 1px; margin: -1px;  overflow: hidden;  padding: 0;  position: absolute;  width: 1px;}
+.redio [type="radio"] + span {display: block; color:#fff;}
+.redio label {cursor: pointer;  display: block; font-size:20px;  line-height:2em; text-align:left; margin:0;}
+.redio [type="radio"] + span:before {content: ''; display: inline-block; width:1em; height: 1em; vertical-align: -0.25em; border-radius: 1em; border: 0.125em solid #fff; box-shadow: 0 0 0 0.15em #000; margin-right: 0.75em; transition: 0.5s ease all;}
+.redio [type="radio"]:checked + span:before {background: green; box-shadow: 0 0 0 0.25em #000;}
+/*.redio [type="radio"]:focus + span:after {content: '\0020\2190'; font-size: 1.5em; line-height: 1; vertical-align: -0.125em;}*/
+
+.course-sec input, .course-sec textarea{max-width:100%; resize: none;}
+.course-sec textarea{height: 120px;}
+.course-sec .fileUpload { float: left !important;  margin: 0 0 5px 30px !important; }
+.course-sec select { height: auto; }
+
+.sec-add-child .redio [type="radio"] + span:before {content: ''; display: inline-block; width:1em; height: 1em; vertical-align: -0.25em; border-radius: 1em; 
+border:6px solid #fff; box-shadow:none; margin-right: 0.75em; transition: 0.5s ease all; background:#fff;}
+.sec-add-child .redio [type="radio"]:checked + span:before {background: green; box-shadow:none;}
+
+
+/*.userliset ul{ list-style:none; padding:0; margin:0;}
+.userliset ul li{ padding:8px 20px; border-bottom:solid 1px #ddd; margin:0; background:#fff;}
+.userliset ul li:nth-child(2n+2){ background:#f0f0f0!important;}
+.userliset ul ~ ul li{ background:#f0f0f0!important;}
+.userliset ul ~ ul li:nth-child(2n+2){ background:#fff!important;}
+.userliset ul ~ ul ~ ul li{ background:#fff!important;}
+.userliset ul ~ ul ~ ul li:nth-child(2n+2){ background:#f0f0f0!important;}
+.userliset { padding-bottom:30px; margin-top:25px; border:solid 1px #ddd; }*/
+
+
+
+
+

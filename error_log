@@ -1,0 +1,85 @@
+[14-Mar-2019 10:34:21 UTC] PHP Parse error:  syntax error, unexpected '?' in /home/rtasaginfotech/public_html/staging/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 500
+[14-Mar-2019 10:34:23 UTC] PHP Parse error:  syntax error, unexpected '?' in /home/rtasaginfotech/public_html/staging/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 500
+[14-Mar-2019 10:34:31 UTC] PHP Parse error:  syntax error, unexpected '?' in /home/rtasaginfotech/public_html/staging/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 500
+[14-Mar-2019 10:34:34 UTC] PHP Parse error:  syntax error, unexpected '?' in /home/rtasaginfotech/public_html/staging/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 500
+[14-Mar-2019 10:35:05 UTC] PHP Warning:  file_get_contents(): http:// wrapper is disabled in the server configuration by allow_url_fopen=0 in /home/rtasaginfotech/public_html/staging/test.php on line 13
+[14-Mar-2019 10:35:05 UTC] PHP Warning:  file_get_contents(http://sms.saginfotech.com/sendsms.jsp?user=saginfo&amp;password=766efe0070XX&amp;mobiles=+919887870597&amp;sms=test%20sms&amp;senderid=SAGRTA): failed to open stream: no suitable wrapper could be found in /home/rtasaginfotech/public_html/staging/test.php on line 13
+[14-Mar-2019 10:35:09 UTC] PHP Parse error:  syntax error, unexpected '?' in /home/rtasaginfotech/public_html/staging/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 500
+[14-Mar-2019 10:37:38 UTC] PHP Parse error:  syntax error, unexpected '?' in /home/rtasaginfotech/public_html/staging/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 500
+[14-Mar-2019 11:22:18 UTC] PHP Parse error:  syntax error, unexpected '?' in /home/rtasaginfotech/public_html/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 500
+[14-Mar-2019 11:22:20 UTC] PHP Parse error:  syntax error, unexpected '?' in /home/rtasaginfotech/public_html/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 500
+[14-Mar-2019 11:22:22 UTC] PHP Parse error:  syntax error, unexpected '?' in /home/rtasaginfotech/public_html/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 500
+[14-Mar-2019 11:22:25 UTC] PHP Parse error:  syntax error, unexpected '?' in /home/rtasaginfotech/public_html/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 500
+[14-Mar-2019 11:22:39 UTC] PHP Parse error:  syntax error, unexpected '?' in /home/rtasaginfotech/public_html/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 500
+[14-Mar-2019 11:22:41 UTC] PHP Parse error:  syntax error, unexpected '?' in /home/rtasaginfotech/public_html/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 500
+[14-Mar-2019 11:22:41 UTC] PHP Parse error:  syntax error, unexpected '?' in /home/rtasaginfotech/public_html/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 500
+[14-Mar-2019 11:23:05 UTC] PHP Parse error:  syntax error, unexpected '?' in /home/rtasaginfotech/public_html/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 500
+[23-Apr-2019 05:29:30 UTC] PHP Fatal error:  Cannot redeclare App\Http\Controllers\homeController::forgot() in /home/rtasaginfotech/public_html/app/Http/Controllers/homeController.php on line 448
+[23-Apr-2019 05:29:32 UTC] PHP Fatal error:  Cannot redeclare App\Http\Controllers\homeController::forgot() in /home/rtasaginfotech/public_html/app/Http/Controllers/homeController.php on line 448
+[23-Apr-2019 05:29:34 UTC] PHP Fatal error:  Cannot redeclare App\Http\Controllers\homeController::forgot() in /home/rtasaginfotech/public_html/app/Http/Controllers/homeController.php on line 448
+[22-May-2019 10:38:06 UTC] PHP Warning:  file_get_contents(http://localhost:8080/): failed to open stream: No route to host in /home/rtasaginfotech/public_html/test.php on line 12
+[22-May-2019 10:38:08 UTC] PHP Warning:  file_get_contents(http://localhost:8080/): failed to open stream: No route to host in /home/rtasaginfotech/public_html/test.php on line 12
+[22-May-2019 10:38:40 UTC] PHP Warning:  file_get_contents(http://localhost:8080/): failed to open stream: No route to host in /home/rtasaginfotech/public_html/test.php on line 12
+[22-May-2019 10:38:40 UTC] PHP Warning:  file_get_contents(http://localhost:8080/): failed to open stream: No route to host in /home/rtasaginfotech/public_html/test.php on line 12
+[22-May-2019 10:40:34 UTC] PHP Warning:  file_get_contents(http://localhost:8080/): failed to open stream: No route to host in /home/rtasaginfotech/public_html/test.php on line 12
+[22-May-2019 10:40:36 UTC] PHP Warning:  file_get_contents(http://localhost:8080/): failed to open stream: No route to host in /home/rtasaginfotech/public_html/test.php on line 12
+[22-May-2019 10:40:36 UTC] PHP Warning:  file_get_contents(http://localhost:8080/): failed to open stream: No route to host in /home/rtasaginfotech/public_html/test.php on line 12
+[22-May-2019 10:40:37 UTC] PHP Warning:  file_get_contents(http://localhost:8080/): failed to open stream: No route to host in /home/rtasaginfotech/public_html/test.php on line 12
+[22-May-2019 10:40:38 UTC] PHP Warning:  file_get_contents(http://localhost:8080/): failed to open stream: No route to host in /home/rtasaginfotech/public_html/test.php on line 12
+[22-May-2019 10:40:38 UTC] PHP Warning:  file_get_contents(http://localhost:8080/): failed to open stream: No route to host in /home/rtasaginfotech/public_html/test.php on line 12
+[22-May-2019 10:40:58 UTC] PHP Warning:  file_get_contents(http://localhost/test/): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home/rtasaginfotech/public_html/test.php on line 12
+[22-May-2019 10:40:59 UTC] PHP Warning:  file_get_contents(http://localhost/test/): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home/rtasaginfotech/public_html/test.php on line 12
+[22-May-2019 10:41:00 UTC] PHP Warning:  file_get_contents(http://localhost/test/): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home/rtasaginfotech/public_html/test.php on line 12
+[22-May-2019 10:41:02 UTC] PHP Warning:  file_get_contents(http://localhost/test/): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home/rtasaginfotech/public_html/test.php on line 12
+[22-May-2019 10:41:03 UTC] PHP Warning:  file_get_contents(http://localhost/test/): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home/rtasaginfotech/public_html/test.php on line 12
+[23-May-2019 09:07:01 UTC] PHP Warning:  file_get_contents(http://localhost/test/): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home/rtasaginfotech/public_html/test.php on line 12
+[23-May-2019 09:07:04 UTC] PHP Warning:  file_get_contents(http://localhost/test/): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home/rtasaginfotech/public_html/test.php on line 12
+[23-May-2019 09:07:18 UTC] PHP Warning:  file_get_contents(): Unable to find the wrapper &quot;ws&quot; - did you forget to enable it when you configured PHP? in /home/rtasaginfotech/public_html/test.php on line 12
+[23-May-2019 09:07:18 UTC] PHP Warning:  file_get_contents(ws://127.0.0.1:9999/): failed to open stream: No such file or directory in /home/rtasaginfotech/public_html/test.php on line 12
+[23-May-2019 09:07:20 UTC] PHP Warning:  file_get_contents(): Unable to find the wrapper &quot;ws&quot; - did you forget to enable it when you configured PHP? in /home/rtasaginfotech/public_html/test.php on line 12
+[23-May-2019 09:07:20 UTC] PHP Warning:  file_get_contents(ws://127.0.0.1:9999/): failed to open stream: No such file or directory in /home/rtasaginfotech/public_html/test.php on line 12
+[23-May-2019 09:07:22 UTC] PHP Warning:  file_get_contents(): Unable to find the wrapper &quot;ws&quot; - did you forget to enable it when you configured PHP? in /home/rtasaginfotech/public_html/test.php on line 12
+[23-May-2019 09:07:22 UTC] PHP Warning:  file_get_contents(ws://127.0.0.1:9999/): failed to open stream: No such file or directory in /home/rtasaginfotech/public_html/test.php on line 12
+[23-May-2019 09:07:50 UTC] PHP Warning:  file_get_contents(): Unable to find the wrapper &quot;ws&quot; - did you forget to enable it when you configured PHP? in /home/rtasaginfotech/public_html/test.php on line 12
+[23-May-2019 09:07:50 UTC] PHP Warning:  file_get_contents(ws://127.0.0.1:9999/): failed to open stream: No such file or directory in /home/rtasaginfotech/public_html/test.php on line 12
+[23-May-2019 09:07:52 UTC] PHP Warning:  file_get_contents(): Unable to find the wrapper &quot;ws&quot; - did you forget to enable it when you configured PHP? in /home/rtasaginfotech/public_html/test.php on line 12
+[23-May-2019 09:07:52 UTC] PHP Warning:  file_get_contents(ws://127.0.0.1:9999/): failed to open stream: No such file or directory in /home/rtasaginfotech/public_html/test.php on line 12
+[23-May-2019 09:08:40 UTC] PHP Warning:  file_get_contents(): Unable to find the wrapper &quot;ws&quot; - did you forget to enable it when you configured PHP? in /home/rtasaginfotech/public_html/test.php on line 12
+[23-May-2019 09:08:40 UTC] PHP Warning:  file_get_contents(ws://127.0.0.1:8080/): failed to open stream: No such file or directory in /home/rtasaginfotech/public_html/test.php on line 12
+[23-May-2019 09:08:44 UTC] PHP Warning:  file_get_contents(): Unable to find the wrapper &quot;ws&quot; - did you forget to enable it when you configured PHP? in /home/rtasaginfotech/public_html/test.php on line 12
+[23-May-2019 09:08:44 UTC] PHP Warning:  file_get_contents(ws://127.0.0.1:8080/): failed to open stream: No such file or directory in /home/rtasaginfotech/public_html/test.php on line 12
+[23-May-2019 09:08:46 UTC] PHP Warning:  file_get_contents(): Unable to find the wrapper &quot;ws&quot; - did you forget to enable it when you configured PHP? in /home/rtasaginfotech/public_html/test.php on line 12
+[23-May-2019 09:08:46 UTC] PHP Warning:  file_get_contents(ws://127.0.0.1:8080/): failed to open stream: No such file or directory in /home/rtasaginfotech/public_html/test.php on line 12
+[23-May-2019 09:09:50 UTC] PHP Warning:  file_get_contents(): Unable to find the wrapper &quot;ws&quot; - did you forget to enable it when you configured PHP? in /home/rtasaginfotech/public_html/test.php on line 12
+[23-May-2019 09:09:50 UTC] PHP Warning:  file_get_contents(ws://127.0.0.1:8080/): failed to open stream: No such file or directory in /home/rtasaginfotech/public_html/test.php on line 12
+[23-May-2019 09:09:54 UTC] PHP Warning:  file_get_contents(): Unable to find the wrapper &quot;ws&quot; - did you forget to enable it when you configured PHP? in /home/rtasaginfotech/public_html/test.php on line 12
+[23-May-2019 09:09:54 UTC] PHP Warning:  file_get_contents(ws://127.0.0.1:8080/): failed to open stream: No such file or directory in /home/rtasaginfotech/public_html/test.php on line 12
+[23-May-2019 09:10:21 UTC] PHP Warning:  file_get_contents(): Unable to find the wrapper &quot;ws&quot; - did you forget to enable it when you configured PHP? in /home/rtasaginfotech/public_html/test.php on line 12
+[23-May-2019 09:10:21 UTC] PHP Warning:  file_get_contents(ws://127.0.0.1/rta/): failed to open stream: No such file or directory in /home/rtasaginfotech/public_html/test.php on line 12
+[23-May-2019 09:10:24 UTC] PHP Warning:  file_get_contents(): Unable to find the wrapper &quot;ws&quot; - did you forget to enable it when you configured PHP? in /home/rtasaginfotech/public_html/test.php on line 12
+[23-May-2019 09:10:24 UTC] PHP Warning:  file_get_contents(ws://127.0.0.1/rta/): failed to open stream: No such file or directory in /home/rtasaginfotech/public_html/test.php on line 12
+[23-May-2019 09:18:07 UTC] PHP Warning:  fsockopen(): unable to connect to ws://127.0.0.1:9999 (Unable to find the socket transport &quot;ws&quot; - did you forget to enable it when you configured PHP?) in /home/rtasaginfotech/public_html/test.php on line 2
+[23-May-2019 09:18:24 UTC] PHP Warning:  fsockopen(): unable to connect to ws://127.0.0.1:9999 (Unable to find the socket transport &quot;ws&quot; - did you forget to enable it when you configured PHP?) in /home/rtasaginfotech/public_html/test.php on line 2
+[23-May-2019 09:18:28 UTC] PHP Warning:  fsockopen(): unable to connect to ws://127.0.0.1:9999 (Unable to find the socket transport &quot;ws&quot; - did you forget to enable it when you configured PHP?) in /home/rtasaginfotech/public_html/test.php on line 2
+[23-May-2019 09:19:16 UTC] PHP Warning:  fsockopen(): unable to connect to http://127.0.0.1:9999 (Unable to find the socket transport &quot;http&quot; - did you forget to enable it when you configured PHP?) in /home/rtasaginfotech/public_html/test.php on line 2
+[23-May-2019 09:19:22 UTC] PHP Warning:  fsockopen(): unable to connect to http://127.0.0.1:9999 (Unable to find the socket transport &quot;http&quot; - did you forget to enable it when you configured PHP?) in /home/rtasaginfotech/public_html/test.php on line 2
+[23-May-2019 09:20:01 UTC] PHP Warning:  fsockopen(): unable to connect to http://127.0.0.1:9999 (Unable to find the socket transport &quot;http&quot; - did you forget to enable it when you configured PHP?) in /home/rtasaginfotech/public_html/test.php on line 2
+[24-May-2019 11:39:38 UTC] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 524292096 bytes) in /home/rtasaginfotech/public_html/app/Http/Controllers/apiController.php on line 71
+[24-May-2019 11:39:38 UTC] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 45056 bytes) in /home/rtasaginfotech/public_html/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 783
+[05-Jun-2019 05:21:50 UTC] PHP Fatal error:  Cannot redeclare App\Http\Controllers\Admin\issuerdocController::add() in /home/rtasaginfotech/public_html/app/Http/Controllers/Admin/issuerdocController.php on line 102
+[05-Jun-2019 08:44:23 UTC] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 524292096 bytes) in /home/rtasaginfotech/public_html/app/Http/Controllers/Admin/issuerBillingController.php on line 62
+[05-Jun-2019 08:44:23 UTC] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 65536 bytes) in /home/rtasaginfotech/public_html/vendor/symfony/var-dumper/Dumper/CliDumper.php on line 86
+[05-Jun-2019 08:45:18 UTC] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 524292096 bytes) in /home/rtasaginfotech/public_html/app/Http/Controllers/Admin/issuerBillingController.php on line 60
+[05-Jun-2019 08:45:18 UTC] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 65536 bytes) in /home/rtasaginfotech/public_html/vendor/symfony/var-dumper/Dumper/CliDumper.php on line 86
+[05-Jun-2019 08:48:16 UTC] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 524292096 bytes) in /home/rtasaginfotech/public_html/app/Http/Controllers/Admin/issuerBillingController.php on line 63
+[05-Jun-2019 08:48:16 UTC] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 65536 bytes) in /home/rtasaginfotech/public_html/vendor/symfony/var-dumper/Dumper/CliDumper.php on line 86
+[05-Jun-2019 08:49:44 UTC] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 524292096 bytes) in /home/rtasaginfotech/public_html/app/Http/Controllers/Admin/issuerBillingController.php on line 63
+[05-Jun-2019 08:49:44 UTC] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 32768 bytes) in /home/rtasaginfotech/public_html/vendor/symfony/var-dumper/Dumper/CliDumper.php on line 518
+[07-Jun-2019 06:24:33 UTC] PHP Warning:  POST Content-Length of 24075883 bytes exceeds the limit of 20971520 bytes in Unknown on line 0

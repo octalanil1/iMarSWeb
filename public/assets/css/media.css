@@ -1,0 +1,343 @@
+@media(max-width: 1400px) {
+    header {
+        background-size: cover;
+        background-position: right;
+    }
+    .slider {
+        background-size: cover;
+        background-position: right;
+    }
+}
+
+@media(max-width: 1200px) {
+    .slider-inner h2 {
+        font-size: 42px;
+    }
+    .slider-inner h4 {
+        font-size: 27px;
+    }
+    .slider-inner p {
+        font-size: 16px;
+    }
+    .slider-inner p {
+        min-height: 130px;
+    }
+    .slider-inner h2 span {
+        margin-bottom: 30px;
+    }
+    .slider-inner button span {
+        font-size: 21px;
+    }
+    footer {
+        padding: 30px 0px 0px;
+    }
+}
+
+@media(max-width: 991.98px) {
+    .appoint-inner {
+        width: 100%;
+    }
+    .img::after {
+        background-size: 60%;
+    }
+    .inner-footer {
+        margin-bottom: 30px;
+    }
+    .siderbarmenu-button {
+        display: block !important;
+        position: relative;
+        z-index: 1;
+        margin: 5px 0px;
+    }
+    .siderbarmenu-button button {
+        background: #ec8a5d;
+        border: 0px;
+        border-radius: 2px;
+        color: #fff;
+        padding: 4px 10px;
+        cursor: pointer;
+    }
+    .main-outer {
+        padding: 0px;
+    }
+    span.custon-sidebar {
+        float: left;
+        height: 100vh;
+        left: 0px;
+        right: 0px;
+        top: 0px;
+        bottom: 0px;
+        position: absolute;
+        width: 0px;
+    }
+    span.custon-sidebar.overlay_outer {
+        width: 100%;
+    }
+    nav.side_bar.main {
+        width: 250px;
+        position: fixed;
+        padding: 0px;
+    }
+    .side_bar {
+        width: 0px;
+        -webkit-transition: 0.5s;
+        -o-transition: 0.5s;
+        transition: 0.5s;
+        overflow-x: hidden;
+    }
+    nav.side_bar.main+.overlay {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        background: rgba(251, 251, 251, 0.7607843137254902);
+        bottom: 0px;
+        z-index: 10;
+    }
+    section.page {
+        margin-left: 0;
+        height: 100%;
+        padding: 0px;
+    }
+    .surveyors>h4 {
+        margin: 5px 0px 15px;
+    }
+}
+
+@media(max-width: 767.98px) {
+    span.user-content h4 {
+        font-size: 18px;
+    }
+    section.signup-outer {
+        padding: 20px 0px;
+    }
+    span.user-content p {
+        font-size: 12px;
+    }
+    .img::after {
+        background-size: 40%;
+    }
+    .operator-outer {
+        min-height: initial;
+    }
+    .img {
+        padding: 35px;
+    }
+    nav.navbar {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .navbar-brand img {
+        width: 110px;
+    }
+    .right-header a {
+        padding: 5px 10px 8px;
+        font-size: 15px;
+        margin-left: 5px;
+    }
+    .slider {
+        padding: 30px 0px;
+    }
+    .slider-inner h2 {
+        font-size: 30px;
+    }
+    .slider-inner h4 {
+        font-size: 23px;
+        margin-bottom: 5px;
+    }
+    .slider-inner p {
+        min-height: initial;
+        margin-bottom: 5px;
+    }
+    .slider-inner button {
+        font-size: 14px;
+        margin-bottom: 40px;
+    }
+    .slider-inner button span {
+        font-size: 18px;
+    }
+    .inner-footer h3 {
+        height: initial;
+    }
+    .inner-footer {
+        margin-bottom: 40px;
+    }
+    .copy-right {
+        margin-top: 0px;
+    }
+    .login-modal .modal-header h5 {
+        font-size: 25px;
+    }
+    .custom_check,
+    a.forget-password {
+        font-size: 14px;
+    }
+    a.forget-password {
+        position: relative;
+        top: 7px;
+    }
+    .login-modal .modal-header h5 img {
+        width: 25px;
+        margin-right: 11px;
+        top: -2px;
+    }
+    ul.listing li span.user-img,
+    ul.upcomeing-past-list li span.past-img {
+        width: 60px;
+        height: 60px;
+    }
+    .user-img img {
+        width: 23px;
+        position: relative;
+        top: -2px;
+    }
+    ul.listing li span.user-info,
+    ul.upcomeing-past-list li span.ship-info {
+        width: calc(100% - 60px);
+        padding-left: 15px;
+    }
+    ul.listing li,
+    ul.upcomeing-past-list li,
+    ul.upcomeing-past-list li {
+        align-items: flex-start;
+        padding: 10px 15px;
+    }
+    ul.upcomeing-past-list li span.right-arrow {
+        right: -10px;
+    }
+    .user-info p a {
+        font-size: 15px;
+    }
+    .surveys-list .list-group a {
+        font-size: 15px;
+    }
+    .ship-info a.paid {
+        font-size: 13px;
+    }
+    .ports p.set span {
+        display: inline-block;
+    }
+    .ports p.set,
+    .edit_profile label {
+        font-size: 16px;
+    }
+    .comments-list ul li {
+        align-items: end;
+    }
+    .company_details h2 {
+        font-size: 1.5rem;
+    }
+    .reserv-msg,
+    .send-msg {
+        width: 100%;
+    }
+}
+
+@media(max-width: 576px) {
+    a.massage_send {
+        right: 0px;
+        bottom: -29px;
+        top: initial;
+    }
+    .img::after {
+        background-size: 70%;
+        width: 65px;
+        right: -70px;
+        top: 60%;
+    }
+    .operator-outer p {
+        font-size: 13px;
+    }
+    .img {
+        padding: 20px;
+    }
+    ul.company_details_list li span {
+        width: 100%;
+    }
+}
+
+@media (max-width:767.98px) {
+    .surveys-list .list-group#myListInner a,
+    .surveys-list .list-group#myListpast a,
+    .surveys-list #myListpastsurveyor a {
+        width: 100%;
+        border-left: 0px;
+        border-top: 1px solid #bee5f7;
+    }
+    .surveys-list .list-group#myListInner a:first-child,
+    .surveys-list .list-group#myListpast a:first-child {
+        border-top: 0px;
+    }
+}
+
+@media only screen and (min-width:480px) and (max-width:767px) {
+    .calendar-wrap {
+        width: 336px
+    }
+    .calendar-days ul li {
+        width: 47px
+    }
+    .calendar-dates ul li {
+        width: 47px
+    }
+}
+
+@media only screen and (min-width:320px) and (max-width:479px) {
+    .calendar-wrap {
+        width: 219px
+    }
+    .calendar-days ul li {
+        width: 30px;
+        font-size: 11px
+    }
+    .calendar-dates ul li {
+        width: 30px
+    }
+    .calendar-dates {
+        width: 217px
+    }
+    .calendar-dates ul li {
+        height: 50px
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width:1023px) {
+    .calendar-wrap {
+        width: 530px
+    }
+    .calendar-days ul li {
+        width: 74px
+    }
+    .calendar-dates ul li {
+        width: 74px
+    }
+    .calendar-dates {
+        width: 525px
+    }
+    .calendar-dates ul li {
+        height: 50px
+    }
+    .user-info-field fieldset {
+        border: 1px solid #ddd!important;
+        margin: 8px;
+        min-width: 0;
+        padding: 10px;
+        position: relative;
+        border-radius: 4px;
+        background-color: #f5f5f5;
+        padding-left: 10px!important
+    }
+    .user-info-field legend {
+        font-size: 14px;
+        font-weight: 700;
+        margin-bottom: 0;
+        width: 35%;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        padding: 5px 5px 5px 10px;
+        background-color: #fff
+    }
+    .calendar-dates ul li.grey span {
+        color: #000!important;
+    }
+}
