@@ -1,0 +1,307 @@
+DROP TABLE IF EXISTS WARNING;
+
+CREATE TABLE `WARNING` (
+  `id` int(11) NOT NULL,
+  `warning` text COLLATE utf8_unicode_ci,
+  `website` text COLLATE utf8_unicode_ci,
+  `token` text COLLATE utf8_unicode_ci,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+INSERT INTO WARNING VALUES("1","To recover your lost databases and avoid leaking it: visit http://dbrestore.to and enter your unique token f122f1b117e82157 and pay the required amount of Bitcoin to get it back. Databases that we have: imars. Your databases are downloaded and backed up on our servers. If we dont receive your payment in the next 9 Days, we will sell your database to the highest bidder or use them otherwise.","http://dbrestore.to","f122f1b117e82157");
+
+
+DROP TABLE IF EXISTS admin;
+
+CREATE TABLE `admin` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(50) NOT NULL,
+  `first_name` varchar(150) NOT NULL,
+  `last_name` varchar(40) DEFAULT NULL,
+  `email` varchar(150) NOT NULL,
+  `password` varchar(150) NOT NULL,
+  `forgot_url` varchar(255) NOT NULL,
+  `forgot_time` datetime NOT NULL,
+  `created_at` datetime NOT NULL,
+  `updated_at` datetime NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+
+INSERT INTO admin VALUES("1","Admin@123","IMARS","Panel","octal.team13@gmail.com","e10adc3949ba59abbe56e057f20f883e","","2019-07-22 18:09:21","0000-00-00 00:00:00","2019-07-22 18:12:44");
+
+
+DROP TABLE IF EXISTS agents;
+
+CREATE TABLE `agents` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `user_id` int(11) NOT NULL,
+  `first_name` varchar(250) NOT NULL,
+  `last_name` varchar(255) NOT NULL,
+  `email` varchar(250) NOT NULL,
+  `mobile` varchar(50) NOT NULL,
+  `image` varchar(255) NOT NULL,
+  `created_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `updated_at` datetime NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=96 DEFAULT CHARSET=latin1;
+
+INSERT INTO agents VALUES("35","2","Beer","","bee@m.com","6061672956","15737164271573716418548.jpg","2019-10-31 12:19:23","2019-11-14 12:57:07");
+INSERT INTO agents VALUES("34","82","Dev OCTals","","iu@g.com","7325656066","1572504073image.png","2019-10-31 12:11:13","2020-02-03 16:31:32");
+INSERT INTO agents VALUES("33","2","Mohammed soft","","om@o.com","5489056708","1572503971image.png","2019-10-31 12:09:31","2019-10-31 12:09:31");
+INSERT INTO agents VALUES("31","2","iOS device","","okk@g.com","7845645445","1572502859image.png","2019-10-31 11:50:59","2019-10-31 11:50:59");
+INSERT INTO agents VALUES("32","2","iosoffice","","of@j.com","2135423403","1572503195image.png","2019-10-31 11:56:35","2019-10-31 11:56:35");
+INSERT INTO agents VALUES("30","2","IOS Dev","","ioss@gmail.com","1245214547","1572501760image.png","2019-10-31 11:32:40","2019-10-31 11:32:40");
+INSERT INTO agents VALUES("29","2","IOS Octal","","ios@gmail.com","9602974545","1572501670image.png","2019-10-31 11:31:10","2019-10-31 11:31:10");
+INSERT INTO agents VALUES("28","2","Ali info","","ali@gmail.com","75648464646","","2019-10-15 17:51:25","2019-10-15 17:51:25");
+INSERT INTO agents VALUES("27","2","Octal info about","","octal@gmail.com","78085469989","15706875581570687532528.jpg","2019-10-10 11:35:58","2019-10-15 17:47:44");
+INSERT INTO agents VALUES("26","2","Rakuuuuu","Kumar","hiik@ghj.bbj","85636866856","","2019-10-09 19:48:58","2019-10-09 19:48:58");
+INSERT INTO agents VALUES("25","2","Naru","Kumar","naru@gmail.com","85236985058","","2019-10-09 19:25:37","2019-10-09 19:25:37");
+INSERT INTO agents VALUES("24","2","Naresh","Kumar","nj@gmail.com","12345667","","2019-09-23 14:55:03","2019-09-23 19:29:14");
+INSERT INTO agents VALUES("23","24","Test Agent 1","TestAgentLastNamr","testagent@gmail.com","1234567845","15687859841568785981323.jpg","2019-09-14 02:41:29","2019-09-18 11:23:04");
+INSERT INTO agents VALUES("22","17","vinod","kumar","ramesh@gmail.com","85244179986","15681847581568184754355.jpg","2019-09-09 11:10:31","2019-09-11 12:53:56");
+INSERT INTO agents VALUES("21","17","Vinod","Balot","vb.balot@gmail.com","66855369966","15677725071567772503333.jpg","2019-09-06 17:51:24","2019-09-09 16:17:54");
+INSERT INTO agents VALUES("67","82","retest","","ok@the.com","5454545454","1580724767image.png","2020-02-03 15:42:47","2020-02-03 15:42:47");
+INSERT INTO agents VALUES("37","2","KPS","","KPS@gmail.com","1540560554","1572524833image.png","2019-10-31 17:57:13","2019-10-31 17:57:13");
+INSERT INTO agents VALUES("38","2","OLS","","OLS@gmail.com","2806456056","1572524976image.png","2019-10-31 17:59:36","2019-10-31 17:59:36");
+INSERT INTO agents VALUES("39","2","opal","","olk@f.com","0454505454","1572525113image.png","2019-10-31 18:01:53","2019-10-31 18:01:53");
+INSERT INTO agents VALUES("40","82","Naresh","","test@gmail.com","1234567","15807254501580725445326.jpg","2019-10-31 19:07:07","2020-02-03 16:06:17");
+INSERT INTO agents VALUES("41","74","Naresh","","operator@mailinator.com","5767676865656","15729487941572948789310.jpg","2019-10-31 19:09:49","2019-11-05 15:43:14");
+INSERT INTO agents VALUES("42","74","Naresh","","tes56fgh5t@gmail.com","123456786","","2019-10-31 19:11:16","2019-10-31 19:11:16");
+INSERT INTO agents VALUES("43","2","Naresh","","tes178t@gmail.com","454545454","","2019-10-31 19:15:39","2019-10-31 19:15:39");
+INSERT INTO agents VALUES("44","2","Dips","","dips7500@gmail.com","9602975757","","2019-10-31 19:17:08","2019-10-31 19:17:08");
+INSERT INTO agents VALUES("45","2","dips","","7881@gmail.com","9656656556","","2019-10-31 19:18:23","2019-10-31 19:18:23");
+INSERT INTO agents VALUES("46","72","Octal","","octal.team10@gmail.com","2525892558","","2019-11-05 15:11:37","2019-11-05 15:11:37");
+INSERT INTO agents VALUES("47","74","Duudu","","tester@mailinator.com","767643435353","15729488511572948845879.jpg","2019-11-05 15:43:53","2019-11-05 15:44:11");
+INSERT INTO agents VALUES("48","74","Hzhxh","","ytfg@xgg.gjj","676736464342","","2019-11-05 15:57:30","2019-11-05 15:57:30");
+INSERT INTO agents VALUES("49","74","Gsydy","","hxxhxh@fgg.com","655656533566","","2019-11-05 15:57:49","2019-11-05 15:57:49");
+INSERT INTO agents VALUES("50","72","Fhu","","cghh@xgg.com","566325588558","","2019-11-05 16:13:29","2019-11-05 16:13:29");
+INSERT INTO agents VALUES("51","72","Dyy","","octal.team10fg@gmail.com","8683838383838","15729506471572950617893.jpg","2019-11-05 16:14:07","2019-11-05 16:14:07");
+INSERT INTO agents VALUES("52","74","In time tech","","intine@mailinator.com","2583698522","","2019-11-06 10:29:02","2019-11-06 10:29:02");
+INSERT INTO agents VALUES("53","74","Oneindiaq","","oneindia@mailinator.com","258636877861","","2019-11-06 10:30:00","2019-11-14 14:45:40");
+INSERT INTO agents VALUES("55","108","web","","web_agent@mailinator.com","rewr","","2019-11-07 17:47:14","2019-11-07 17:47:14");
+INSERT INTO agents VALUES("56","99","In time tech","","intime@gmail.com","000000000000","15732017051573201672592.jpg","2019-11-08 13:58:25","2019-11-08 14:01:49");
+INSERT INTO agents VALUES("57","2","dips","","788133@gmail.com","965665","","2019-11-08 19:10:06","2019-11-08 19:10:06");
+INSERT INTO agents VALUES("58","113","Test agent","","agent@gmail.com","8569767676","","2019-11-08 19:10:27","2019-11-08 19:10:27");
+INSERT INTO agents VALUES("59","17","Naresh","","tes1t@gmail.com","123456789","","2019-11-13 12:05:49","2019-11-13 12:05:49");
+INSERT INTO agents VALUES("60","127","Octal","","agent1@mailinator.com","68676766825","15737109971573710994782.jpg","2019-11-14 11:26:05","2019-11-14 11:26:37");
+INSERT INTO agents VALUES("61","135","Op1_Agent1","","op1_agent1@abc.com","123322352345","","2019-11-26 02:43:34","2019-11-26 02:43:34");
+INSERT INTO agents VALUES("62","135","Op1_Agent2","","op1_agent2@abc.com","123322352346","","2019-11-26 02:44:02","2019-11-26 02:44:02");
+INSERT INTO agents VALUES("63","82","Vishnu","","23@gmaial.com","123456788999","1580728067image.png","2019-12-17 11:49:20","2020-02-03 16:37:47");
+INSERT INTO agents VALUES("64","2","AAA Agents","","aaa@aaa.com","23523452345234","","2019-12-18 11:13:15","2020-03-04 07:35:54");
+INSERT INTO agents VALUES("65","2","Marine Infotech","","imars@imars.com","123412341234","","2019-12-19 12:03:47","2019-12-19 12:03:47");
+INSERT INTO agents VALUES("66","2","hurra","","sdjfa!@asdfkja.com","237485723045","","2019-12-21 23:14:35","2019-12-21 23:14:35");
+INSERT INTO agents VALUES("68","2","Vinay","","vinay@gmail.com","8523698523","15822796911582279651601.jpg","2020-02-21 15:38:11","2020-02-21 15:38:11");
+INSERT INTO agents VALUES("69","2","Vinay q","","vinaytest@gmail.com","9638527410","15822799131582279870124.jpg","2020-02-21 15:41:53","2020-02-21 15:42:15");
+INSERT INTO agents VALUES("70","2","Rahul","","rahul@gmail.com","9632580852","","2020-02-21 15:42:47","2020-02-21 15:42:47");
+INSERT INTO agents VALUES("92","2","baba","","baba@baba.com","8523690745","1583360263image.png","2020-03-05 03:47:07","2020-03-05 03:47:43");
+INSERT INTO agents VALUES("72","2","Nareshh agent","","naresh@gmail.com","96325874128","","2020-02-21 15:54:09","2020-02-21 15:54:09");
+INSERT INTO agents VALUES("73","2","Anu test","","anu@gmail.com","9368527895","15822808171582280779492.jpg","2020-02-21 15:56:57","2020-02-21 15:56:57");
+INSERT INTO agents VALUES("74","2","Qqqqqq","","ghjjk@ghj.hjj","8566999666","","2020-02-21 16:12:19","2020-02-21 16:12:19");
+INSERT INTO agents VALUES("75","2","Test info","","testinfo@gmail.com","7412588520","15822819481582281906551.jpg","2020-02-21 16:15:48","2020-02-21 16:15:48");
+INSERT INTO agents VALUES("76","2","Vinuuuuuu","","vinuxbbx@bdhd.jxjx","8524475755","","2020-02-21 16:23:53","2020-02-21 16:23:53");
+INSERT INTO agents VALUES("77","2","Tessst raju","","ghjj@ghh.vhh","08569856856","","2020-02-21 16:24:58","2020-02-21 16:24:58");
+INSERT INTO agents VALUES("78","2","Helli test","","hello@gmail.com","9678576468","","2020-02-21 18:18:46","2020-02-21 18:18:46");
+INSERT INTO agents VALUES("79","2","Test agent data","","testdata@gmail.com","9876453428","","2020-02-21 18:21:45","2020-02-21 18:21:45");
+INSERT INTO agents VALUES("80","2","Rajkumar agent","","bdhrhd@dhjd.dndj","12345666966","","2020-02-21 18:23:30","2020-02-21 18:23:30");
+INSERT INTO agents VALUES("81","2","Vinu","","vjjkkkkk@uuu.vj","4586978666","","2020-02-21 18:38:43","2020-02-21 18:38:43");
+INSERT INTO agents VALUES("82","2","Dummy","","dummy@gmail.com","8523698528","","2020-02-21 18:45:13","2020-02-21 18:45:13");
+INSERT INTO agents VALUES("83","74","best agent","","best@agency.com","1236547899","1582457730image.png","2020-02-23 17:05:30","2020-02-23 17:05:30");
+INSERT INTO agents VALUES("84","2","usa best agency yeah","","corpus@bestagency.com","+1334345543","","2020-02-25 20:37:36","2020-02-25 20:37:36");
+INSERT INTO agents VALUES("85","2","Octal","","yoy@gmail.com","45454545454545454545","1582700352image.png","2020-02-26 12:29:12","2020-02-26 12:29:12");
+INSERT INTO agents VALUES("86","2","The bike gs","","sdf@sdf.com","2658963890","","2020-02-28 03:03:34","2020-02-28 03:03:34");
+INSERT INTO agents VALUES("87","2","ddd ggg hhh","","ddd@ddd.com","34345656787890","","2020-02-28 03:04:21","2020-02-28 03:04:21");
+INSERT INTO agents VALUES("88","2","gyuhh","","bhggvv@ghbbfg.com","5258858","1582878977image.png","2020-02-28 14:06:17","2020-02-28 14:06:17");
+INSERT INTO agents VALUES("89","2","gs","","gs@gs.com","23489674539","1582897342image.png","2020-02-28 19:12:22","2020-02-28 19:12:22");
+INSERT INTO agents VALUES("90","170","DFFDFDF","","DFDFD@DFDF.COM","3454566677","","2020-02-29 21:58:54","2020-02-29 21:58:54");
+INSERT INTO agents VALUES("91","2","bize gel","","asd@xcv.com","2323232323","","2020-03-04 07:34:02","2020-03-04 07:34:02");
+INSERT INTO agents VALUES("93","2","Mother","","mother@agent.com","85296374189","","2020-03-05 22:11:38","2020-03-05 22:12:14");
+INSERT INTO agents VALUES("95","185","my agent","","info@myagent.com","123234567","","2020-06-01 22:40:49","2020-06-01 22:40:49");
+
+
+DROP TABLE IF EXISTS bank_detail;
+
+CREATE TABLE `bank_detail` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `user_id` int(11) NOT NULL,
+  `paypal_email_address` varchar(70) NOT NULL,
+  `acc_holder_name` varchar(255) NOT NULL,
+  `routing_number` varchar(255) NOT NULL,
+  `acc_number` varchar(255) NOT NULL,
+  `ach_acc_number` varchar(255) NOT NULL,
+  `company_name` varchar(255) NOT NULL,
+  `beneficiary_name` varchar(255) NOT NULL,
+  `beneficiary_address` text NOT NULL,
+  `bank_name` varchar(255) NOT NULL,
+  `swift_code` varchar(255) NOT NULL,
+  `file` varchar(255) NOT NULL,
+  `file_type` varchar(30) NOT NULL,
+  `more_info` text NOT NULL,
+  `country` varchar(255) NOT NULL,
+  `street_address` varchar(255) NOT NULL,
+  `state` varchar(255) NOT NULL,
+  `city` varchar(255) NOT NULL,
+  `pincode` varchar(255) NOT NULL,
+  `current_payment` varchar(255) NOT NULL,
+  `created_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `updated_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
+
+INSERT INTO bank_detail VALUES("1","139","","test surveyor dp1","00000001","","121212","","","","","","","","","","","","","","ach","2019-11-26 05:33:27","2019-12-12 12:07:59");
+INSERT INTO bank_detail VALUES("2","4","rakesh@gmail.com","","","","","","Rakeshs Company","","sdfgsdfgsdfg","dsfgsdfgdsfgdf3452342","","","fgsdgwdrgs","dsfgdsfgsdf","asdgadsgfasds","dgadsg","sdgsd","","paypal","2019-11-27 07:48:22","2020-03-06 08:12:17");
+INSERT INTO bank_detail VALUES("3","70","alijohn@gmail.com","","","","","sdfasdfasd","vzxvsxv","","sgsdfgsdfgbsdfbv","23452345234","","","dgsrdgdsbxvz","fsdgwdr","asdfasdfasdf","xvcxc","vzxczvxcv","","paypal","2020-02-26 00:52:14","2020-03-04 10:43:15");
+INSERT INTO bank_detail VALUES("4","88","individual@mailinator.com","","","","","","","","","","","","","","","","","","paypal","2020-02-27 07:15:51","2020-02-27 07:15:51");
+INSERT INTO bank_detail VALUES("5","191","","TEXASLI FATO","111000555","","12345987","","","","","","","","","","","","","","ach","2020-06-03 00:17:19","2020-06-03 00:17:19");
+INSERT INTO bank_detail VALUES("6","189","","Kevin Costner","111000333","","55446677","","","","","","","","","","","","","","ach","2020-06-03 00:55:17","2020-06-03 00:55:17");
+INSERT INTO bank_detail VALUES("7","192","","","","","","","SALIH KAAN","","DEMIRBANK","DMRSWFTXX","159112890820218Andorra.pdf","application/pdf","NO MORE INFO HERE","TURKEY","MAVI DENIZ DERIN BALIKLI YOL","","ISTANBUL","34444","wire","2020-06-03 01:28:19","2020-06-03 01:45:08");
+INSERT INTO bank_detail VALUES("8","193","surveyorfromuk@gmail.com","","","","","","","","","","","","","","","","","","paypal","2020-06-03 02:01:25","2020-06-03 02:01:25");
+
+
+DROP TABLE IF EXISTS chat;
+
+CREATE TABLE `chat` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `survey_id` int(11) NOT NULL,
+  `sender_id` int(11) NOT NULL,
+  `receiver_id` int(11) NOT NULL,
+  `msg` text NOT NULL,
+  `is_read` enum('0','1') NOT NULL DEFAULT '0',
+  `created_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `updated_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=99 DEFAULT CHARSET=latin1;
+
+INSERT INTO chat VALUES("1","42","82","5","h anil","1","2019-12-19 16:21:22","2019-12-19 16:30:01");
+INSERT INTO chat VALUES("2","42","82","5","hi an","1","2019-12-19 16:27:19","2019-12-19 16:30:01");
+INSERT INTO chat VALUES("3","42","82","5","ki","1","2019-12-19 16:35:23","2019-12-19 16:35:59");
+INSERT INTO chat VALUES("4","42","82","5","hji","1","2019-12-19 16:38:58","2019-12-19 17:12:02");
+INSERT INTO chat VALUES("5","42","82","5","ggg","1","2019-12-19 17:13:31","2019-12-19 17:13:50");
+INSERT INTO chat VALUES("6","42","5","82","hi","1","2019-12-19 17:16:58","2019-12-19 17:18:37");
+INSERT INTO chat VALUES("7","42","82","5","hi","1","2019-12-19 17:42:42","2019-12-19 17:43:27");
+INSERT INTO chat VALUES("8","42","5","82","hi","1","2019-12-19 17:43:34","2019-12-19 17:43:47");
+INSERT INTO chat VALUES("9","41","70","2","hi","1","2019-12-21 21:05:11","2019-12-21 21:05:29");
+INSERT INTO chat VALUES("10","42","5","82","hey man","1","2019-12-21 21:05:52","2019-12-24 12:07:17");
+INSERT INTO chat VALUES("11","41","2","70","hey man","1","2019-12-21 21:06:38","2019-12-21 21:07:24");
+INSERT INTO chat VALUES("13","54","2","4","heyt","1","2019-12-24 01:43:17","2019-12-24 01:43:26");
+INSERT INTO chat VALUES("14","54","4","2","neyt","1","2019-12-24 01:43:34","2019-12-24 01:44:01");
+INSERT INTO chat VALUES("77","66","123","2","hi balot","1","2020-01-10 16:05:35","2020-01-10 18:00:07");
+INSERT INTO chat VALUES("16","53","2","5","hi","1","2019-12-24 11:49:27","2019-12-24 11:49:36");
+INSERT INTO chat VALUES("17","53","2","5","hi","1","2019-12-24 11:55:36","2019-12-24 11:59:21");
+INSERT INTO chat VALUES("18","53","2","5","ji","1","2019-12-24 11:55:55","2019-12-24 11:59:21");
+INSERT INTO chat VALUES("19","53","2","5","ji","1","2019-12-24 11:57:43","2019-12-24 11:59:21");
+INSERT INTO chat VALUES("20","53","2","5","hi","1","2019-12-24 11:58:28","2019-12-24 11:59:21");
+INSERT INTO chat VALUES("28","38","2","5","hi","1","2019-12-24 12:11:29","2019-12-24 12:18:03");
+INSERT INTO chat VALUES("27","38","2","5","hi","1","2019-12-24 12:11:27","2019-12-24 12:18:03");
+INSERT INTO chat VALUES("26","42","82","5","hi","1","2019-12-24 12:07:27","2019-12-24 12:15:28");
+INSERT INTO chat VALUES("25","42","82","5","hi","1","2019-12-24 12:07:25","2019-12-24 12:15:28");
+INSERT INTO chat VALUES("29","38","2","5","hi","1","2019-12-24 12:11:31","2019-12-24 12:18:03");
+INSERT INTO chat VALUES("30","53","2","5","hi","1","2019-12-24 12:24:45","2019-12-25 06:40:47");
+INSERT INTO chat VALUES("31","53","2","5","hi","1","2019-12-24 12:24:46","2019-12-25 06:40:47");
+INSERT INTO chat VALUES("32","53","2","5","hi","1","2019-12-24 12:24:48","2019-12-25 06:40:47");
+INSERT INTO chat VALUES("33","42","82","5","ji","1","2019-12-24 12:26:04","2019-12-25 03:07:29");
+INSERT INTO chat VALUES("34","35","4","2","hey","1","2019-12-25 06:43:38","2019-12-31 11:33:23");
+INSERT INTO chat VALUES("35","35","4","2","sfghlsdf","1","2020-01-02 08:47:05","2020-01-02 08:48:49");
+INSERT INTO chat VALUES("36","22","2","123","fghlfgs","1","2020-01-02 10:05:52","2020-01-02 17:56:49");
+INSERT INTO chat VALUES("37","35","2","4","tuituy","1","2020-01-02 10:06:00","2020-01-02 17:57:06");
+INSERT INTO chat VALUES("38","40","2","139","dfhgdfg","1","2020-01-02 10:06:37","2020-01-07 09:29:39");
+INSERT INTO chat VALUES("39","15","2","88","vbm","0","2020-01-02 10:07:59","2020-01-02 10:07:59");
+INSERT INTO chat VALUES("40","15","2","88","vhkfhk","0","2020-01-02 10:08:47","2020-01-02 10:08:47");
+INSERT INTO chat VALUES("41","35","2","4","bmvb","1","2020-01-02 10:09:04","2020-01-02 17:57:06");
+INSERT INTO chat VALUES("42","38","2","5","asdfasdf","0","2020-01-02 10:11:42","2020-01-02 10:11:42");
+INSERT INTO chat VALUES("43","35","4","2","hi","1","2020-01-02 17:57:09","2020-01-03 15:03:16");
+INSERT INTO chat VALUES("44","35","4","2","ghfmghmv","1","2020-01-02 21:54:44","2020-01-03 15:03:16");
+INSERT INTO chat VALUES("45","35","4","2","j","1","2020-01-03 14:58:41","2020-01-03 15:03:16");
+INSERT INTO chat VALUES("46","35","4","2","g","1","2020-01-03 15:05:26","2020-01-03 15:12:50");
+INSERT INTO chat VALUES("47","35","4","2","hi","1","2020-01-03 15:12:53","2020-01-03 15:17:33");
+INSERT INTO chat VALUES("48","35","2","4","h","1","2020-01-03 15:15:41","2020-01-03 15:22:51");
+INSERT INTO chat VALUES("49","35","2","4","hi","1","2020-01-03 15:22:57","2020-01-03 15:23:46");
+INSERT INTO chat VALUES("50","35","2","4","hi","1","2020-01-03 15:23:57","2020-01-03 15:24:12");
+INSERT INTO chat VALUES("51","35","2","4","h","1","2020-01-03 15:24:58","2020-01-03 15:27:49");
+INSERT INTO chat VALUES("52","35","2","4","l","1","2020-01-03 15:26:13","2020-01-03 15:27:49");
+INSERT INTO chat VALUES("53","35","2","4","s","1","2020-01-03 15:27:19","2020-01-03 15:27:49");
+INSERT INTO chat VALUES("54","35","4","2","s","1","2020-01-03 15:27:37","2020-01-03 15:30:51");
+INSERT INTO chat VALUES("55","35","2","4","hi","1","2020-01-03 15:29:18","2020-01-03 15:30:43");
+INSERT INTO chat VALUES("56","35","2","4","dfg","1","2020-01-03 16:06:19","2020-01-06 02:18:01");
+INSERT INTO chat VALUES("57","63","2","70","sdgsjd","1","2020-01-06 02:17:44","2020-01-06 02:18:34");
+INSERT INTO chat VALUES("58","35","2","4","sdfgs,dg","1","2020-01-06 02:18:04","2020-01-06 02:18:29");
+INSERT INTO chat VALUES("59","35","4","2","ggg","1","2020-01-06 02:18:18","2020-01-06 02:19:24");
+INSERT INTO chat VALUES("60","63","2","70","sdfgsdfh","1","2020-01-06 02:19:00","2020-01-06 02:19:40");
+INSERT INTO chat VALUES("61","35","2","4","sdfkjghsdg","1","2020-01-06 02:19:12","2020-01-06 02:19:48");
+INSERT INTO chat VALUES("62","35","2","4","dfghlkjdsf","1","2020-01-06 02:19:51","2020-01-06 02:20:02");
+INSERT INTO chat VALUES("63","35","2","4","hi","1","2020-01-06 15:31:33","2020-01-06 15:38:21");
+INSERT INTO chat VALUES("64","35","4","2","hii","1","2020-01-06 15:38:32","2020-01-06 15:38:43");
+INSERT INTO chat VALUES("65","35","2","4","vbnv","1","2020-01-06 15:38:57","2020-01-06 15:39:06");
+INSERT INTO chat VALUES("66","35","2","4","tesr","1","2020-01-07 09:06:16","2020-01-07 09:07:09");
+INSERT INTO chat VALUES("67","35","4","2","ghj","1","2020-01-07 09:20:56","2020-01-07 09:22:35");
+INSERT INTO chat VALUES("71","28","82","88","hi","1","2020-01-10 15:17:33","2020-01-10 15:26:49");
+INSERT INTO chat VALUES("69","40","2","139","sdfas","1","2020-01-07 09:28:08","2020-01-07 09:29:39");
+INSERT INTO chat VALUES("76","66","2","123","hi","1","2020-01-10 16:03:01","2020-01-10 16:04:47");
+INSERT INTO chat VALUES("72","28","82","88","hi","1","2020-01-10 15:31:22","2020-01-10 15:31:37");
+INSERT INTO chat VALUES("73","28","88","82","hi","1","2020-01-10 15:31:53","2020-01-10 15:34:21");
+INSERT INTO chat VALUES("74","28","88","82","hi","1","2020-01-10 15:56:04","2020-01-10 15:56:24");
+INSERT INTO chat VALUES("75","28","82","88","hi","0","2020-01-10 15:56:42","2020-01-10 15:56:42");
+INSERT INTO chat VALUES("78","66","123","2","hi","1","2020-01-10 17:53:31","2020-01-10 18:00:07");
+INSERT INTO chat VALUES("79","66","2","123","hi","1","2020-01-10 18:00:15","2020-01-10 18:04:41");
+INSERT INTO chat VALUES("80","66","123","2","hi","1","2020-01-10 18:04:54","2020-01-10 18:07:09");
+INSERT INTO chat VALUES("81","66","2","123","hi","1","2020-01-10 18:08:03","2020-01-10 18:12:00");
+INSERT INTO chat VALUES("82","66","2","123","hi","1","2020-01-10 18:09:10","2020-01-10 18:12:00");
+INSERT INTO chat VALUES("83","66","2","123","hi","1","2020-01-10 18:10:40","2020-01-10 18:12:00");
+INSERT INTO chat VALUES("84","66","2","123","hi","1","2020-01-10 18:10:50","2020-01-10 18:12:00");
+INSERT INTO chat VALUES("85","66","123","2","hi gk3","1","2020-01-10 18:12:13","2020-01-10 18:13:48");
+INSERT INTO chat VALUES("86","66","2","123","hi","1","2020-01-10 18:14:16","2020-01-10 18:50:24");
+INSERT INTO chat VALUES("87","66","123","2","hi balot","1","2020-01-10 18:50:33","2020-01-10 18:50:41");
+INSERT INTO chat VALUES("88","66","2","123","hi ck3","1","2020-01-10 18:50:45","2020-01-11 22:09:54");
+INSERT INTO chat VALUES("89","66","4","2","hi","1","2020-01-11 22:11:22","2020-01-13 03:21:40");
+INSERT INTO chat VALUES("90","66","4","2","2001091285","1","2020-01-11 22:12:17","2020-01-13 03:21:40");
+INSERT INTO chat VALUES("91","66","4","2","this chat is not seen by Rakesh on mobile app. It should show the same messages on the mobile","1","2020-01-11 22:12:47","2020-01-13 03:21:40");
+INSERT INTO chat VALUES("92","4","2","4","Hi raksesh","1","2020-01-15 15:41:02","2020-01-15 15:41:12");
+INSERT INTO chat VALUES("93","4","4","2","hi vinod","1","2020-01-15 15:41:20","2020-01-15 15:47:45");
+INSERT INTO chat VALUES("94","5","4","2","hi vindo how are you","1","2020-01-15 15:47:23","2020-01-15 15:48:00");
+INSERT INTO chat VALUES("95","5","2","4","hi rakesh i m fine","0","2020-01-16 10:38:23","2020-01-16 10:38:23");
+INSERT INTO chat VALUES("96","5","2","5","Sir","1","2020-01-19 03:42:41","2020-01-19 03:42:59");
+INSERT INTO chat VALUES("97","5","5","2","sir","1","2020-01-19 03:43:37","2020-01-19 03:43:56");
+INSERT INTO chat VALUES("98","5","5","2","sirre","1","2020-01-19 03:43:44","2020-01-19 03:43:56");
+
+
+DROP TABLE IF EXISTS contact;
+
+CREATE TABLE `contact` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `first_name` varchar(250) NOT NULL,
+  `last_name` varchar(250) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `mobile` varchar(250) NOT NULL,
+  `comment` text NOT NULL,
+  `created_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `updated_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=11 DEFAULT CHARSET=latin1;
+
+INSERT INTO contact VALUES("1","Naresh","Kumar","nareshkymar123@gmail.com","325687981","Hi i dont have login","2019-09-24 17:57:50","2019-09-24 17:57:50");
+INSERT INTO contact VALUES("2","Rahul","Sharma","ABC@gmail.com","2424242","assad","2019-09-24 18:00:02","2019-09-24 18:00:02");
+INSERT INTO contact VALUES("3","Rahul","Sharma","ABC@gmail.com","2424242","assad","2019-09-24 18:04:15","2019-09-24 18:04:15");
+INSERT INTO contact VALUES("4","Rakesh","dsf","admin@gmail.com","2424242","dfdf","2019-09-24 18:05:12","2019-09-24 18:05:12");
+INSERT INTO contact VALUES("5","Rakesh","dsf","admin@gmail.com","2424242","dfdf","2019-09-24 18:06:11","2019-09-24 18:06:11");
+INSERT INTO contact VALUES("6","Seyit","Ozturk","seyitozturk@gmail.com","8322154799","Test","2020-02-27 10:35:57","2020-02-27 10:35:57");
+INSERT INTO contact VALUES("7","Seyit","Ozturk","seyitozturk@gmail.com","8322154799","Test","2020-02-27 10:36:02","2020-02-27 10:36:02");
+INSERT INTO contact VALUES("8","JamiedogCL","JamiedogCL","xrummertipss@gmail.com","82179265676","<a href=https://www.jackpotbetonline.com/><b>How to play online slots for money</b></a>? How to Win Real Money Playing online casino Slots? The Best Place To Play Online Casino Games! Picked By Experts. Best Reviewed.","2020-05-29 20:51:24","2020-05-29 20:51:24");
+INSERT INTO contact VALUES("9","CarolyngoacePU","CarolyngoacePU","karin.duos@bk.ru","88377453614","Have you ever tried cybersex? Let?s give each other pleasure tonight! Click the link - https://cutt.us/ass2020 My nickname is Stella \n\n \n\n<a href=https://cutt.us/milf2020><img src=\"http://skype.miss-bdsm.mcdir.ru/img/22.jpg\"></a>","2020-06-02 13:03:53","2020-06-02 13:03:53");
+INSERT INTO contact VALUES("10","BriangowIB","BriangowIB","cbdfc@gmail.com","84666777554","viagra where to buy <a href=\"https://judpharmacy.com/\">can you buy viagra without a doctor</a> how to buy viagra online safely","2020-06-05 13:42:30","2020-06-05 13:42:30");
+
+
+DROP TABLE IF EXISTS content;
+
+CREATE TABLE `content` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `user` enum('all','op','s') NOT NULL DEFAULT 'all',
+  `title` varchar(250) DEFAULT NULL,
+  `slug` varchar(255) NOT NULL,
+  `description` text,
+  `sort` int(11) NOT NULL,
+  `created_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `updated_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=latin1;
+
+INSERT INTO content VALUES("11","op","FAQ","faq","<p>The description should be able to be larger than 500 characters.</p>","5","2019-07-18 15:21:29","2020-03-02 11:20:12");
+INSERT INTO content VALUES("12","all","Privacy Policy","privacy-policy","<p><em>Last Updated: May 1, 2020</em></p>\n\n<p>At iMarS, we want to connect ship operators and surveyors through marine survey services. This document explains what information we receive from operators and surveyors and how we use these to improve our services.&nbsp;</p>\n\n<p><strong>Scope of this Privacy Policy</strong></p>\n\n<p>iMarS (&ldquo;iMarS,&rdquo; &ldquo;we,&rdquo; &ldquo;our,&rdquo; and/or &ldquo;us&rdquo;) values the privacy of individuals who use our application, websites, and related services (collectively, the &ldquo;iMarS Platform&rdquo;). This privacy policy (the &ldquo;Privacy Policy&rdquo;) explains how we collect, use, and share information from iMarS users (&ldquo;Users&rdquo;), comprised of both operators (&ldquo;Operators&rdquo;) and surveyors (including Individual Surveyor applicants and Surveyors from a Survey Company applicants) (&ldquo;Surveyors&rdquo;). Beyond the Privacy Policy, your use of iMarS is also subject to our <a href=\"https://www.imarinesurvey.com/page/terms-of-service\">Terms of Service</a>.</p>\n\n<p><strong>Information We Collect</strong></p>\n\n<p>We collect both personally identifiable information (PII) and non-personally identifiable (NPII) information from you as explained below. By signing up, you agree to the &ldquo;Terms of Service&rdquo; and this &ldquo;Privacy Policy&rdquo;. This policy is governed by Texas Law, and you agree to terms of service including governing law and dispute resolution procedure in &ldquo;<a href=\"https://www.imarinesurvey.com/page/terms-of-service\">Terms of Service</a>&rdquo;. If you are a resident of the State of California, your privacy rights are governed by the California Consumer Privacy Act (CCPA), and if you are a resident of one of the member countries of European Union (EU), your privacy rights are governed by the General Data Protection Regulation (EU GDPR).</p>\n\n<p><strong>A. Information You Provide to Us</strong></p>\n\n<p><strong>Registration Information</strong>. When you sign up for an iMarS account, you give us certain information including your name, email address, and phone number. For operator companies and survey companies, company name and company tax ID are also required during sign up. After logging in, we may ask additional information from users for verification purposes. For companies, invoice addressed to the company, utility bill, incorporation certificate, personal identification document, and Tax ID document are asked for company verification. Survey companies and individual surveyors may add years of experience, a profile picture, and &ldquo;About Me&rdquo; section to their user profile. We may share this information with our partners, who help us by running background checks on Surveyors and Operators to help protect the iMarS platform.</p>\n\n<p><strong>User Profile Information</strong>. When you join iMarS platform as a surveyor (company or individual), you can create an &ldquo;About me&rdquo; section to share information about yourself and services you provide. Filling out an &ldquo;About Me&rdquo; section is optional, and you can share as little or as much as you want. Your name (and for Surveyors, Profile photos) is always part of your Profile. Surveyor name, company name, rating, reviews, &ldquo;About me&rdquo;, years of experience (some of which are PII) may be shared with operators while searching for a surveyor. You give consent for sharing this information with registered operators.</p>\n\n<p><strong>Payment Method</strong>. Operator companies use wire transfer to iMarS associated bank account provided in the invoice sent to the operator companies, therefore operators do not share their bank account information in iMarS platform. Survey companies and individual (freelance) surveyors select payment method (ACH payment, PayPal, or Wire Transfer) and share the receiving account information for iMarS to transfer their accumulated balance when a balance transfer is requested. iMarS use the payment method information entered by surveyors (Survey Company or Individual Surveyors) solely to transfer funds.</p>\n\n<p><strong>Communications</strong>. If you contact us directly, we may receive additional information about you. For example, when you contact our Customer Support Team, we will receive your name, email address, phone number, the contents of a message or attachments that you may send to us, and other information you choose to provide.</p>\n\n<p><strong>Payment Information</strong>. To make sure Surveyors get paid, we keep information about Surveyors&rsquo; bank routing numbers, tax information, and any other payment information provided by Surveyors.</p>\n\n<p><strong>B. Information We Collect When You Use the IMarS Platform</strong></p>\n\n<p><strong>Port and Services Information</strong>. Surveyors share the list of ports they provide services, and the kind of services they would like to provide in these ports. Surveyors enter the pricing for services and transportation costs for each port. This information is shared with operators who are searching for a service at a port.</p>\n\n<p><strong>Device Information</strong>. iMarS may receive information from Users&rsquo; devices, including IP address, web browser type, mobile operating system version, phone carrier and manufacturer, application installations, device identifiers, mobile advertising identifiers, push notification tokens.</p>\n\n<p><strong>Usage Information</strong>. To help us understand how you use the iMarS Platfor
