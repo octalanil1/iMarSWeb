@@ -3019,18 +3019,20 @@ $message = 'One or more required fields are missing. Please try again.';
 			
 								$rating=$surveyor_data->surveyor_rating;
 
-								$bid_count = DB::table('custom_survey_users')->where('survey_id',$surveyor_data->id)->where('status','upcoming')->count();
+								$bid_count = DB::table('custom_survey_users')->where('survey_id',$surveyor_data->id)
+								->where('status','upcoming')->count();
 								if($bid_count>0){
 									$bid_status='1';
 								}else{
 									$bid_status='0';
 								}
 
-								$bid_count = DB::table('custom_survey_users')->where('survey_id',$surveyor_data->id)->where('surveyors_id',$user_id)->where('status','approved')->count();
+								$bid_count = DB::table('custom_survey_users')->where('survey_id',$surveyor_data->id)
+								->where('surveyors_id',$user_id)->where('status','approved')->count();
 								if($bid_count>0){
 								$bid_accept_status='1';
 								}else{
-									$bid_accept_status='0';
+								$bid_accept_status='0';
 								}
 
 								if($surveyor_data->survey_type_id=='8' || $surveyor_data->survey_type_id=='23'
@@ -3848,6 +3850,8 @@ $message = 'One or more required fields are missing. Please try again.';
 						$survey->report = $imageName;
 					}
 					$survey->status='3';
+
+					$survey->report_submit_date=date("Y-m-d h:i:s");
 
 
 				

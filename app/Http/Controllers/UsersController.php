@@ -5053,7 +5053,7 @@ public function reportsubmit(Request $request)
 							$image->move(public_path().'/media/report', $imageName);
 							$survey->report = $imageName;
 						}
-					
+						$survey->report_submit_date=date("Y-m-d h:i:s");
 							$survey->status='3';
 							
 

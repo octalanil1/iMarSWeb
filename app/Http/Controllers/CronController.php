@@ -212,7 +212,7 @@ class CronController extends Controller
 		{
 					$surveys_data =  Survey::select('survey.*')->where('survey.status','3')
 					 //->where('id',50)
-					->where('created_at', '<=', DB::raw('DATE_SUB(NOW(), INTERVAL 3 DAY)'))
+					->where('report_submit_date', '<=', DB::raw('DATE_SUB(NOW(), INTERVAL 3 DAY)'))
 					->get();
 
 				//	dd($surveys_data);

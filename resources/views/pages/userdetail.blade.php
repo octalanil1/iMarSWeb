@@ -46,12 +46,12 @@
                         if($data->rating < $i ) {
                             if(is_float((float)$data->rating) && (round((float)$data->rating) == $i)){
                                 
-                                echo "<img src=\"http://3.21.49.221/public/media/star-half.png\">";
+                                echo "<img src=\"https://www.imarinesurvey.com/public/media/star-half.png\">";
                             }else{
-                                echo "<img src=\"http://3.21.49.221/public/media/star-empty.png\">";
+                                echo "<img src=\"https://www.imarinesurvey.com/public/media/star-empty.png\">";
                             }
                          }else {
-                            echo "<img src=\"http://3.21.49.221/public/media/star.png\">";
+                            echo "<img src=\"https://www.imarinesurvey.com/public/media/star.png\">";
                          } 
                          } ?>
                                 

@@ -367,16 +367,17 @@ function GetSurveyor()
                 </div>
             
                 <div class="col-md-6">
-                <label class="col-md-12 col-sm-12 col-xs-12 control-label">Upload Instructions Document:</label>
-                <div class="upload-file">
-                <input type="file" name="file_data" id="" class="form-control input-file" onkeypress="error_remove()">
-                <button class="btn-success">Upload</button>
-                </div>
-                <div class="form-group">
-                        <input type="text"class="upload-name" id="input-file-placeholder" placeholder="Upload Image" disabled>
+                    <label class="col-md-12 col-sm-12 col-xs-12 control-label">Upload Instructions Document:</label>
+                    <div class="upload-file">
+                        <input type="file" name="file_data" id="" class="form-control input-file" onkeypress="error_remove()">
+                        <button class="btn-success">Upload</button>
+                    </div>
+                    <div class="form-group">
+                            <input type="text"class="upload-name" id="input-file-placeholder" 
+                            placeholder="Upload Image" disabled>
                     </div>
                     <div id="file_data"></div>
-                                            
+                                                
                 </div>
                 <div class="col-md-6">
                     <div class="form-group">                                                                                               
